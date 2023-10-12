@@ -9,14 +9,9 @@ import {
   loadTemplate,
 } from "./utils.js";
 
-import { initEvents } from "./pages/events/events.js";
-import { initNews } from "./pages/news/news.js";
-
 window.addEventListener("load", async () => {
     const templateEvents = await loadTemplate("./pages/events/events.html");
-    const templateServices = await loadTemplate("./pages/services/services.html");
     const templateAbout = await loadTemplate("./pages/about/about.html");
-    const templateNews = await loadTemplate("./pages/news/news.html");
 
     adjustForMissingHash();
 
@@ -35,45 +30,27 @@ window.addEventListener("load", async () => {
         .on({
             "/events": () => {
                 renderTemplate(templateEvents, "content")
-                document.getElementById("title").innerText = "Events";
-                document.getElementById("news-box").style.display = "none"
+                document.getElementById("title").innerText = "Events"
+                document.getElementById("event-images").innerHTML = "<div class='image-item'><img src='./images/events1.jpg' /></div> <div class='image-item-2'><img src='./images/events2.jpg' /></div> <div class='image-item'><img src='./images/events3.jpg' /></div> <div class='image-item-2'><img src='./images/events4.jpg' /></div>"
                 document.getElementById("second-hand").style.display = "none"
-                document.getElementById("top-box").style.backgroundImage = `url("./images/bar2.png")`;
-                document.getElementById("top-box").style.height = "15%";
+                document.getElementById("top-box").style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./images/bar2.png")`;
                 document.getElementById("top-box").style.backgroundSize = "cover";
                 document.getElementById("top-box").style.backgroundPosition = "center 65%";
-                initEvents()
-            },
-            "/services": () => {
-                renderTemplate(templateServices, "content")
-                document.getElementById("title").innerText = "Services"
-                document.getElementById("news-box").style.display = "none"
-                document.getElementById("second-hand").style.display = "none"
-                document.getElementById("top-box").style.backgroundImage = `url("./images/butik.png")`
-                document.getElementById("top-box").style.backgroundSize = "cover";
             },
             "/about": () => {
                 renderTemplate(templateAbout, "content")
-                document.getElementById("title").innerText = "Om os"
+                document.getElementById("title").innerHTML = "<span class='margin'></span>" + "Åbningstider"
                 document.getElementById("title").style.paddingTop = "0.5%"
-                document.getElementById("news-box").style.display = "none"
-                document.getElementById("second-hand").style.display = "none"
-                document.getElementById("top-box").style.backgroundImage = `url("./images/about3.png")`
-                document.getElementById("top-box").style.backgroundSize = "cover";
-                document.getElementById("top-box").style.backgroundPosition = "center 89%";
-                document.getElementById("top-box").style.height = "9.1vw";
-            },
-            "/news": () => {
-                renderTemplate(templateNews, "content")
-                initNews()
-                document.getElementById("title").innerText = "Nyheder"
-                document.getElementById("news-box").style.display = "none"
-                document.getElementById("second-hand").style.display = "none"
+                document.getElementById("second-hand").style.display = "block"
+                document.getElementById("extra-content").innerHTML = "MANDAG-FREDAG: 11-17:30 <br>" +
+                    "LØRDAG: 11-15 <br>" +
+                    "SØNDAG: LUKKET <br>"
+                document.getElementById("extra-content").style.textAlign = "center"
+                document.getElementById("top-box").style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("./images/about.JPG")`
                 document.getElementById("top-box").style.height = "15%";
-                document.getElementById("top-box").style.backgroundImage = `url("./images/news2.png")`
                 document.getElementById("top-box").style.backgroundSize = "cover";
-                document.getElementById("top-box").style.backgroundPosition = "center";
-            }
+                document.getElementById("top-box").style.backgroundPosition = "center 80%";
+            },
         })
         .notFound(() => {
         })

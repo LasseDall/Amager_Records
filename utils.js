@@ -1,4 +1,4 @@
-import { API_URL } from "./settings.js";
+
 
 /**
  * Appends the provided template to the node with the id contentId
@@ -92,13 +92,4 @@ export function sanitizeStringWithTableRows(tableRows) {
   let secureRows = DOMPurify.sanitize("<table>" + tableRows + "</table>");
   secureRows = secureRows.replace("<table>", "").replace("</table>", "");
   return secureRows;
-}
-
-export async function getNews() {
-  try {
-    const news = await fetch(API_URL + "/news/").then(handleHttpErrors);
-    return news;
-  } catch (error) {
-    console.log(error);
-  }
 }

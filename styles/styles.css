@@ -15,18 +15,17 @@ footer div {
   margin-bottom: 1%;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #img-box {
   display: flex;
   justify-content: flex-end;
+  height: 9vw;
+  width: auto;
 }
 
-.title {
-  display: flex;
-  justify-content: center;
-  font-size: 2rem;
-  font-family: titleFont;
-  color: #e2c6d5;
-}
 .title:hover {
   color: gold;
   cursor: pointer;
@@ -40,16 +39,16 @@ footer div {
   src: url("../font/static/MavenPro-Regular.ttf");
 }
 .content {
-  background-image: url(".././images/index2.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(".././images/index2.png");
   background-position: center;
   background-size: cover;
-  font-family: standard;
+  background-color: rgba(255, 255, 255, 0.5);
   color: white;
-  display: flex;
-  min-height: 50vw;
+  height: 100vh;
   display: grid;
   grid-template-rows: 1fr 2fr;
 }
+
 #buttons section {
   display: flex;
   justify-content: center;
@@ -58,62 +57,46 @@ footer div {
   background-color: gold;
   cursor: pointer;
 }
-#news-box {
-  background-color: white;
-  color: black;
-  min-height: 50vh;
-  opacity: 0.8;
-  max-width: 40vw;
-  font-size: 1.5rem;
-}
-#news-id {
-  display: flex;
-  justify-content: flex-end;
-}
+
 #title {
   margin-top: 3%;
-  color: #e2c6d5;
-  font-size: 7vw;
+  color: rgb(247, 204, 208);
+  font-size: 10vw;
   font-weight: bold;
   font-family: titleFont;
   display: flex;
   justify-content: center;
 }
 
-body {
-  background: linear-gradient(120deg, white, #e2c6d5);
+.doc-top {
+  background: linear-gradient(120deg, white 20%, rgb(247, 204, 208));
   background-repeat: no-repeat;
-  background-position: top left;
   margin: 0;
   overflow-x: hidden;
 }
 .section-right {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  box-shadow: 2px 5px white;
+  grid-template-columns: 1fr 2fr;
+  margin: 0;
   font-family: standard;
   font-size: 1.5vw;
-  padding: 2vh;
-  padding-bottom: 4vh;
+  background: linear-gradient(140deg, rgb(247, 204, 208) 25%, rgb(247, 204, 208) 72.8%, white 65%, white 100%);
 }
 .section-left {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  box-shadow: -2px 5px 1px 1px white;
+  margin: 0;
   font-family: standard;
   font-size: 1.5vw;
-  padding: 2vh;
-  padding-bottom: 4vh;
+  background: linear-gradient(40deg, white 0%, white 25%, rgb(247, 204, 208) 25%, rgb(247, 204, 208) 75%, white 75%, white 100%);
 }
 .section-right div {
   margin: 0 0.5vw 0;
+  padding-left: 5%;
 }
 .section-left div {
   margin: 0 0.5vw 0;
+  padding-left: 5%;
 }
 
 .img-left {
@@ -124,14 +107,41 @@ body {
 .img {
   width: 100%;
   height: auto;
-  max-height: 400px;
-  border: solid 1px black;
+  padding-left: 5%;
+  padding-bottom: 5%;
+  padding-right: 5%;
+  padding-top: 10%;
+  max-height: 800px;
+  display: flex;
+  justify-content: flex-end;
   object-fit: cover;
+  position: relative;
+}
+
+.mini-title-top {
+  font-family: titleFont;
+  font-size: 3vw;
+  padding-top: 4%;
 }
 
 .mini-title {
   font-family: titleFont;
-  font-size: 3vw;
+  font-size: 3.5vw;
+  padding-top: 4%;
+}
+
+.mini-title-left {
+  font-family: titleFont;
+  font-size: 3.5vw;
+  padding-top: 10%;
+  padding-left: 2%;
+}
+
+
+.opening-hours {
+  font-family: titleFont;
+  font-size: 6vw;
+  text-align: center;
 }
 .navbar-nav {
   font-family: standard;
@@ -146,8 +156,13 @@ body {
   color: gold !important;
 }
 
+.navbar {
+  font-size: x-large;
+}
+
 .dropdown-menu {
   padding: 0;
+  font-size: small !important;
 }
 
 .dropdown-item {
@@ -158,20 +173,15 @@ body {
 }
 
 @media (max-width: 600px) {
-  #news-box {
-    width: 100%;
-    max-width: 100%;
-  }
   #title {
-    margin-top: 15vw;
-    font-size: 9vw;
+    font-size: 14vw;
   }
   footer div {
     font-size: 2vw;
   }
   #btm-img {
-    width: 40px;
-    height: 40px;
+    width: 12.5vw;
+    height: 12.5vw;
   }
   .section-left {
     font-size: 2vw;
@@ -181,6 +191,29 @@ body {
   }
   .mini-title {
     font-size: 4vw;
+  }
+  .navbar-image-container img {
+    width: 30vw !important;
+    height: auto;
+    margin-top: -10px;
+    margin-bottom: -10px;
+  }
+  .navbar-image-container {
+    max-height: 10vw !important;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30%;
+  }
+  .doc-top {
+    background: linear-gradient(120deg, white 30%, rgb(247, 204, 208));
+    background-repeat: no-repeat;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  #second-hand {
+    font-size: 8vw !important;
   }
 }
 
@@ -341,3 +374,97 @@ body {
   background: #e4405f;
   color: #fff;
 }
+
+.image-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding-top: 3%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 3%;
+  background: linear-gradient(110deg, white 25%, rgb(247, 204, 208) 25%, rgb(247, 204, 208) 80%, white 65%, white 100%);
+}
+
+.image-item-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding-top: 3%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 3%;
+  background: linear-gradient(70deg, white 25%, rgb(247, 204, 208) 25%, rgb(247, 204, 208) 80%, white 65%, white 100%);
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-item-2 img {
+  width: 100%;
+  height: auto;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-image-container {
+  max-height: 7vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30%;
+}
+
+.navbar-image-container img {
+  width: 20vw;
+  height: auto;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
+#second-hand {
+  font-size: 6vw;
+  font-family: titleFont;
+  padding-left: 5vw;
+  color: rgb(247, 204, 208);
+}
+
+.margin {
+  margin-left: 5vw;
+}
+
+#content {
+  background: linear-gradient(30deg, white 0%, white 5%, rgb(247, 204, 208) 40%, rgb(247, 204, 208) 90%, white 10%);
+  margin: 0;
+}
+
+.info-text-right {
+  font-size: 1.8vw;
+}
+
+.info-text-left {
+  font-size: 1.8vw;
+  padding-left: 2%;
+}
+
+
+
+
+
+
+
+
