@@ -80,7 +80,7 @@ body {
   margin: 0;
   font-family: standard;
   font-size: 1.5vw;
-  background: linear-gradient(140deg, rgb(247, 204, 208) 25%, rgb(247, 204, 208) 72.8%, white 65%, white 100%);
+  background: linear-gradient(149deg, rgb(247, 204, 208) 25%, rgb(247, 204, 208) 72.8%, white 65%, white 100%);
 }
 .section-left {
   display: grid;
@@ -454,6 +454,7 @@ body {
 
 .info-text-right {
   font-size: 1.8vw;
+  padding-right: 3.5%;
 }
 
 .info-text-left {
