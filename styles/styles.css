@@ -34,14 +34,17 @@ body {
   color: gold;
   cursor: pointer;
 }
+
 @font-face {
   font-family: titleFont;
   src: url("../font/hunkyDory.otf");
 }
+
 @font-face {
   font-family: standard;
   src: url("../font/static/MavenPro-Regular.ttf");
 }
+
 .content {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(".././images/index2.png");
   background-position: center;
@@ -57,6 +60,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
 #buttons section:hover {
   background-color: gold;
   cursor: pointer;
@@ -78,6 +82,7 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
+
 .section-right {
   display: grid;
   align-items: center;
@@ -87,6 +92,7 @@ body {
   font-size: 1.8vw;
   background: linear-gradient(155deg, rgb(247, 204, 208) 25%, rgb(247, 204, 208) 65%, white 50%, white 100%);
 }
+
 .section-left {
   display: grid;
   align-items: center;
@@ -96,27 +102,11 @@ body {
   font-size: 1.8vw;
   background: linear-gradient(40deg, white 0%, white 25%, rgb(247, 204, 208) 25%, rgb(247, 204, 208) 75%, white 75%, white 100%);
 }
-.section-right div {
-  margin: 0 0.5vw 0;
-  padding-left: 5%;
-}
-.section-left div {
-  margin: 0 0.5vw 0;
-  padding-left: 5%;
-}
-
-.img-left {
-  display: flex;
-  justify-content: flex-end;
-}
 
 .img {
   width: 100%;
   height: auto;
-  padding-left: 5%;
-  padding-bottom: 5%;
-  padding-right: 5%;
-  padding-top: 10%;
+  padding: 5%;
   max-height: 800px;
   display: flex;
   justify-content: flex-end;
@@ -127,7 +117,6 @@ body {
 .mini-title-top {
   font-family: titleFont;
   font-size: 4.5vw;
-  padding-top: 4%;
   text-align: center;
   padding-bottom: 2%;
 }
@@ -135,7 +124,6 @@ body {
 .mini-title {
   font-family: titleFont;
   font-size: 4.5vw;
-  padding-top: 4%;
   text-align: center;
   padding-bottom: 2%;
 }
@@ -143,8 +131,6 @@ body {
 .mini-title-left {
   font-family: titleFont;
   font-size: 4.5vw;
-  padding-top: 10%;
-  padding-left: 2%;
   text-align: center;
   padding-bottom: 2%;
 }
@@ -180,6 +166,7 @@ body {
 .dropdown-item {
   padding: 0.5rem;
 }
+
 #lilText {
   min-height: 80vh;
 }
@@ -187,6 +174,7 @@ body {
 @media (max-width: 600px) {
   #title {
     font-size: 14vw;
+    margin-top: 10%;
   }
   footer div {
     font-size: 2vw;
@@ -241,6 +229,10 @@ body {
   }
   #top-box {
     height: 90vh;
+  }
+
+  .img {
+    max-height: 300px;
   }
 }
 
