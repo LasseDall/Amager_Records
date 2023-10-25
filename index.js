@@ -30,8 +30,8 @@ window.addEventListener("load", async () => {
         .on({
             "/events": () => {
                 renderTemplate(templateEvents, "content")
-                document.getElementById("title").innerText = "Events"
-                document.getElementById("event-images").innerHTML = "<div class='image-item'><img src='./images/events1.jpg' /></div> <div class='image-item-2'><img src='./images/events2.jpg' /></div> <div class='image-item'><img src='./images/events3.jpg' /></div> <div class='image-item-2'><img src='./images/events4.jpg' /></div>"
+                document.getElementById("title").innerText = "EVENTS"
+                document.getElementById("event-images").innerHTML = "<a href='https://www.place2book.com/da/sw2/sales/event_list/EM11444'> <div class='image-item'><img src='./images/events1.jpg' /></div> </a><a href='https://www.place2book.com/da/sw2/sales/event_list/EM11444'> <div class='image-item-2'><img src='./images/events2.jpg' /></div> </a><a href='https://www.place2book.com/da/sw2/sales/event_list/EM11444'> <div class='image-item'><img src='./images/events3.jpg' /></div> </a><a href='https://www.place2book.com/da/sw2/sales/event_list/EM11444'> <div class='image-item-2'><img src='./images/events4.jpg' /></div> </a>"
                 document.getElementById("second-hand").style.display = "none"
                 document.getElementById("top-box").style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./images/bar2.png")`;
                 document.getElementById("top-box").style.backgroundSize = "cover";
@@ -39,17 +39,18 @@ window.addEventListener("load", async () => {
             },
             "/about": () => {
                 renderTemplate(templateAbout, "content")
-                document.getElementById("title").innerHTML = "<span class='margin'></span>" + "Åbningstider"
+                document.getElementById("title").innerHTML = "ÅBNINGSTIDER"
                 document.getElementById("title").style.paddingTop = "0.5%"
+                document.getElementById("title").style.paddingBottom = "2%"
                 document.getElementById("second-hand").style.display = "block"
                 document.getElementById("extra-content").innerHTML = "MANDAG-FREDAG: 11-17:30 <br>" +
                     "LØRDAG: 11-15 <br>" +
                     "SØNDAG: LUKKET <br>"
                 document.getElementById("extra-content").style.textAlign = "center"
-                document.getElementById("top-box").style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("./images/about.JPG")`
+                document.getElementById("top-box").style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("./images/about4.PNG")`
                 document.getElementById("top-box").style.height = "15%";
                 document.getElementById("top-box").style.backgroundSize = "cover";
-                document.getElementById("top-box").style.backgroundPosition = "center 80%";
+                document.getElementById("top-box").style.backgroundPosition = "center 90%";
             },
         })
         .notFound(() => {

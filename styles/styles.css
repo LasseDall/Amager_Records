@@ -30,11 +30,6 @@ body {
   width: auto;
 }
 
-.title:hover {
-  color: gold;
-  cursor: pointer;
-}
-
 @font-face {
   font-family: titleFont;
   src: url("../font/hunkyDory.otf");
@@ -61,17 +56,12 @@ body {
   justify-content: center;
 }
 
-#buttons section:hover {
-  background-color: gold;
-  cursor: pointer;
-}
-
 #title {
   margin-top: 3%;
   color: rgb(247, 204, 208);
-  font-size: 10vw;
-  font-weight: bold;
-  font-family: titleFont;
+  font-size: 8vw;
+  font-weight: bolder;
+  font-family: "Franklin Gothic Heavy", sans-serif;
   display: flex;
   justify-content: center;
 }
@@ -173,7 +163,7 @@ body {
 
 @media (max-width: 600px) {
   #title {
-    font-size: 14vw;
+    font-size: 8.5vw;
     margin-top: 10%;
   }
   footer div {
@@ -225,7 +215,7 @@ body {
     overflow-x: hidden;
   }
   #second-hand {
-    font-size: 9vw !important;
+    font-size: 6vw !important;
   }
   #top-box {
     height: 90vh;
@@ -437,14 +427,11 @@ body {
 }
 
 #second-hand {
-  font-size: 6vw;
-  font-family: titleFont;
-  padding-left: 5vw;
+  font-size: 4.8vw;
+  font-family: "Franklin Gothic Heavy", sans-serif;
+  font-weight: bolder;
+  text-align: center;
   color: rgb(247, 204, 208);
-}
-
-.margin {
-  margin-left: 5vw;
 }
 
 #content {
