@@ -41,7 +41,7 @@ body {
 }
 
 .content {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(".././images/index2.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(".././images/index.jpg");
   background-position: center;
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.5);
@@ -224,6 +224,14 @@ body {
   .img {
     max-height: 300px;
   }
+
+  .navbar .navbar-pics {
+    display: none;
+  }
+}
+
+.navbar-pics {
+  padding-left: 51%;
 }
 
 .border-top-partial {
