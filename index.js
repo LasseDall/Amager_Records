@@ -32,6 +32,7 @@ window.addEventListener("load", async () => {
             "/events": () => {
                 renderTemplate(templateEvents, "content")
                 document.getElementById("title").innerText = "EVENTS"
+                document.getElementById("opening-hours").style.display = "none"
                 document.getElementById("event-images").innerHTML = "<a href='https://www.place2book.com/da/sw2/sales/event_list/EM11444' target='_blank'> <div class='image-item'><img src='./images/events1.png' /></div> </a><a href='https://www.place2book.com/da/sw2/sales/event_list/EM11444' target='_blank'> <div class='image-item-2'><img src='./images/events2.png' /></div> </a><a href='https://www.place2book.com/da/sw2/sales/event_list/EM11444' target='_blank'> <div class='image-item'><img src='./images/events3.png' /></div> </a><a href='https://www.place2book.com/da/sw2/sales/event_list/EM11444' target='_blank'> <div class='image-item-2'><img src='./images/events4.png' /></div> </a>"
                 document.getElementById("top-box").style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./images/bar2.png")`;
                 document.getElementById("top-box").style.backgroundSize = "cover";
@@ -40,6 +41,7 @@ window.addEventListener("load", async () => {
             "/about": () => {
                 renderTemplate(templateAbout, "content")
                 document.getElementById("title").innerHTML = "ÅBNINGSTIDER"
+                document.getElementById("opening-hours").style.display = "block"
                 document.getElementById("title").style.paddingTop = "0.5%"
                 document.getElementById("title").style.paddingBottom = "2%"
                 document.getElementById("opening-hours").innerHTML = "MANDAG-FREDAG: 11-17:30 <br>" +
