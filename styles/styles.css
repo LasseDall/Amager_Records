@@ -234,8 +234,14 @@ body {
   }
 }
 
+@media (max-width: 990px) {
+  .navbar-pics {
+    display: none;
+  }
+}
+
 .navbar-pics {
-  padding-left: 40%;
+  padding-left: 39%;
 }
 
 .border-top-partial {
