@@ -227,6 +227,11 @@ body {
   .navbar .navbar-pics {
     display: none;
   }
+
+  #opening-hours {
+    padding-top: 2%;
+    line-height: 2.1 !important;
+  }
 }
 
 .navbar-pics {
@@ -463,6 +468,15 @@ body {
   padding-left: 2%;
   text-align: center;
   line-height: 1.4;
+}
+
+#opening-hours {
+  text-align: center;
+  font-family: "Arial Black", sans-serif;
+  font-weight: bolder;
+  font-size: 4.4vw;
+  color: rgb(247, 204, 208);
+  line-height: 1.8;
 }
 
 
