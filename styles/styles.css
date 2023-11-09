@@ -458,22 +458,21 @@ body {
 }
 
 .info-text-right {
-  font-size: 2.2vw;
+  font-size: 1.9vw;
   padding-right: 3.5%;
   text-align: center;
 }
 
 .info-text-left {
-  font-size: 2.2vw;
+  font-size: 1.9vw;
   padding-left: 2%;
   text-align: center;
 }
 
 .info-text-køb {
-  font-size: 2.2vw;
+  font-size: 1.9vw;
   padding-left: 2%;
   text-align: center;
-  line-height: 1.4;
 }
 
 #opening-hours {
