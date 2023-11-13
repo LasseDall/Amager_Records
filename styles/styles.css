@@ -23,6 +23,10 @@ body {
   color: black !important;
 }
 
+.info-text-right a {
+  color: black !important;
+}
+
 #img-box {
   display: flex;
   justify-content: flex-end;
