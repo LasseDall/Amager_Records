@@ -23,7 +23,7 @@ body {
   color: black !important;
 }
 
-.info-text-right a {
+.info-text-top a {
   color: black !important;
 }
 
@@ -179,9 +179,12 @@ body {
   .info-text-left {
     font-size: 2.3vw !important;
   }
+  .info-text-top {
+    font-size: 2.3vw !important;
+    padding-top: 3.5%; !important;
+  }
   .info-text-right {
     font-size: 2.3vw !important;
-    padding-top: 3%; !important;
   }
   .info-text-køb {
     font-size: 2.3vw !important;
@@ -466,6 +469,12 @@ body {
 }
 
 .info-text-right {
+  font-size: 1.9vw;
+  padding-right: 3.5%;
+  text-align: center;
+}
+
+.info-text-top {
   font-size: 1.9vw;
   padding-right: 3.5%;
   text-align: center;
