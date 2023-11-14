@@ -228,7 +228,7 @@ body {
     font-size: 5.5vw !important;
   }
   #top-box {
-    height: 90vh;
+    height: 80vh !important;
   }
 
   .img {
