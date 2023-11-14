@@ -240,8 +240,7 @@ body {
   }
 
   #opening-hours {
-    padding-top: 2%;
-    line-height: 2.1 !important;
+    font-size: 6vw !important;
   }
 }
 
