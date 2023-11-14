@@ -95,6 +95,7 @@ window.addEventListener("load", async () => {
                 document.getElementById("event-images").innerHTML = "<a href='https://www.place2book.com/da/sw2/sales/event_list/EM11444' target='_blank'> <div class='image-item'><img src='./images/events1.png' /></div> </a><a href='https://www.place2book.com/da/sw2/sales/event_list/EM11444' target='_blank'> <div class='image-item-2'><img src='./images/events2.png' /></div> </a><a href='https://www.place2book.com/da/sw2/sales/event_list/EM11444' target='_blank'> <div class='image-item'><img src='./images/events3.png' /></div> </a><a href='https://www.place2book.com/da/sw2/sales/event_list/EM11444' target='_blank'> <div class='image-item-2'><img src='./images/events4.png' /></div> </a>"
                 document.getElementById("top-box").style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./images/bar2.png")`;
                 document.getElementById("top-box").style.backgroundSize = "cover";
+                document.getElementById("top-box").style.height = "100vh";
                 document.getElementById("top-box").style.backgroundPosition = "center 65%";
             },
             "/about": () => {
@@ -109,6 +110,7 @@ window.addEventListener("load", async () => {
                 document.getElementById("top-box").style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("./images/about4.PNG")`
                 document.getElementById("top-box").style.height = "15%";
                 document.getElementById("top-box").style.backgroundSize = "cover";
+                document.getElementById("top-box").style.height = "100vh";
                 document.getElementById("top-box").style.backgroundPosition = "center 90%";
             },
             "/tickets": () => {
