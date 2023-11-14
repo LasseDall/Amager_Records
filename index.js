@@ -23,8 +23,8 @@ window.addEventListener("load", async () => {
     router
         .hooks({
             before(done, match) {
-                setActiveLink("menu", match.url)
-                done()
+                setActiveLink("menu", match.url);
+                done();
             }
         })
         .on({
@@ -134,4 +134,17 @@ window.addEventListener("load", async () => {
             errorObj
         );
     };
+
+        const menuLinks = document.querySelectorAll('#menu .nav-link');
+
+        menuLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+
+            const navbarNav = document.getElementById('navbarNav');
+
+            if (navbarNav.classList.contains('show')) {
+                navbarNav.classList.remove('show');
+            }
+        });
+    });
 });
