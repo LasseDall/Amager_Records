@@ -30,7 +30,7 @@ body {
 #img-box {
   display: flex;
   justify-content: flex-end;
-  height: 10vw;
+  height: 9vw;
   width: auto;
 }
 
@@ -244,14 +244,15 @@ body {
   }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1225px) {
   .navbar-pics {
     display: none;
   }
 }
 
+
 .navbar-pics {
-  padding-left: 39%;
+  padding-left: 28%;
 }
 
 .border-top-partial {
@@ -498,6 +499,18 @@ body {
   font-size: 4.4vw;
   color: rgb(247, 204, 208);
   line-height: 1.8;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: white;
+}
+
+li {
+  padding-right: 2%;
 }
 
 

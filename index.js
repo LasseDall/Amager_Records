@@ -12,7 +12,6 @@ import {
 window.addEventListener("load", async () => {
     const templateEvents = await loadTemplate("./pages/events/events.html");
     const templateAbout = await loadTemplate("./pages/about/about.html");
-    const templateTickets = await loadTemplate("./pages/tickets/tickets.html");
 
     adjustForMissingHash();
 
@@ -114,7 +113,10 @@ window.addEventListener("load", async () => {
                 document.getElementById("top-box").style.backgroundPosition = "center 90%";
             },
             "/tickets": () => {
-                renderTemplate(templateTickets, "content");
+                window.open("https://www.place2book.com/da/sw2/sales/event_list/EM11444", "_blank");
+            },
+            "/webshop": () => {
+                window.open("https://www.discogs.com/user/amagerrecords.dk", "_blank");
             },
         })
         .notFound(() => {
