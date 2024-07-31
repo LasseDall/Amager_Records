@@ -106,7 +106,7 @@ window.addEventListener("load", async () => {
                 document.getElementById("opening-hours").innerHTML = "MANDAG-FREDAG: 11-17:30 <br>" +
                     "LØRDAG: 11-15 <br>" +
                     "SØNDAG: LUKKET <br>"
-                document.getElementById("top-box").style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("./images/about4.PNG")`
+                document.getElementById("top-box").style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("./images/Butik.jpeg")`
                 document.getElementById("top-box").style.height = "15%";
                 document.getElementById("top-box").style.backgroundSize = "cover";
                 document.getElementById("top-box").style.height = "100vh";
