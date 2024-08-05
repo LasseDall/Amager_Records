@@ -87,16 +87,6 @@ window.addEventListener("load", async () => {
                 document.getElementById("top-box").style.height = "100vh";
                 document.getElementById("top-box").style.backgroundPosition = "center";
             },
-            "/events": () => {
-                renderTemplate(templateEvents, "content")
-                document.getElementById("title").innerText = "EVENTS"
-                document.getElementById("opening-hours").style.display = "none"
-                document.getElementById("event-images").innerHTML = "<a href='https://www.place2book.com/da/sw2/sales/event_list/EM11444' target='_blank'> <div class='image-item'><img src='./images/events1.png' /></div> </a><a href='https://www.place2book.com/da/sw2/sales/event_list/EM11444' target='_blank'> <div class='image-item-2'><img src='./images/events2.png' /></div> </a>"
-                document.getElementById("top-box").style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./images/bar2.png")`;
-                document.getElementById("top-box").style.backgroundSize = "cover";
-                document.getElementById("top-box").style.height = "100vh";
-                document.getElementById("top-box").style.backgroundPosition = "center 65%";
-            },
             "/about": () => {
                 renderTemplate(templateAbout, "content")
                 document.getElementById("title").innerHTML = "ÅBNINGSTIDER"
