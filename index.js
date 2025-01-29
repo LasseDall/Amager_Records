@@ -100,7 +100,7 @@ window.addEventListener("load", async () => {
                 document.getElementById("top-box").style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("./images/Butik.jpeg")`
                 document.getElementById("top-box").style.height = "15%";
                 document.getElementById("top-box").style.backgroundSize = "cover";
-                document.getElementById("top-box").style.height = "100vh";
+                document.getElementById("top-box").style.height = "110vh";
                 document.getElementById("top-box").style.backgroundPosition = "center 90%";
             },
             "/tickets": () => {
