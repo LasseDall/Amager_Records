@@ -93,7 +93,7 @@ window.addEventListener("load", async () => {
                 document.getElementById("opening-hours").style.display = "block"
                 document.getElementById("title").style.paddingTop = "0.5%"
                 document.getElementById("title").style.paddingBottom = "2%"
-                document.getElementById("opening-hours").innerHTML = "MANDAG: LUKKET <br>"
+                document.getElementById("opening-hours").innerHTML = "MANDAG: LUKKET <br>" +
                     "TIRSDAG-FREDAG: 12-17:30 <br>" +
                     "LØRDAG: 11-15 <br>" +
                     "SØNDAG: LUKKET <br>"
