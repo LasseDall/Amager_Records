@@ -50,7 +50,7 @@ body {
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.5);
   color: white;
-  height: 105vh;
+  height: 115vh;
   display: grid;
   grid-template-rows: 1fr 2fr;
 }
