@@ -48,7 +48,7 @@ window.addEventListener("load", async () => {
                 <p class="info-text-køb">
                     Har du en pladesamling der står på loftet og samler støv?  Har du arvet en samling eller trænger du blot til at skifte ud i din egen samling, skal du ikke tøve med at komme til os. <br>
                     Vi opkøber plader i de fleste genrer og bruger god tid på at vurdere din samling. Det er vigtigt for os, at du kan føle dig tryg i processen og at vores bud bliver så fair som muligt.
-                    Vi betaler ca. ⅓  af den vurderede salgspris kontant. Ønsker du i stedet at bytte, er det til ca. halvdelen af vores forventede salgspris.
+                    Vi betaler ca. 20%  af den vurderede salgspris kontant. Ønsker du i stedet at bytte, er det til ca. halvdelen af vores forventede salgspris.
                 </p>
             </div>
             <div>
