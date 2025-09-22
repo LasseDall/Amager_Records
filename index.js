@@ -79,7 +79,9 @@ window.addEventListener("load", async () => {
             <div>
                 <img class="img" src="./images/koncert.JPG" />
             </div>
-        </section>`;
+            
+        </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1757682547245!6m8!1m7!1sCAoSHENJQUJJaEQ2eVRybGNzRkY2NzQzVXIxUy1CWF8.!2m2!1d55.65665584420639!2d12.6093572634597!3f354.58659108101466!4f0.5823936828342653!5f0.7820865974627469" width="99%" height="800vh" style="border:0; margin:0.5%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
                 document.getElementById("title").innerHTML = `AMAGER RECORDS <p id="extra-content">SECOND HAND VINYL</p>`;
                 document.getElementById("opening-hours").style.display = "none";
                 document.getElementById("top-box").style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./images/index.jpg")`;
