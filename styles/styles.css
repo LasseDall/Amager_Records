@@ -513,6 +513,24 @@ li {
   padding-right: 2%;
 }
 
+  iframe {
+    width: 99%;
+    height: 800px; 
+    margin: 0.5%;
+  }
+
+  @media (max-width: 768px) {
+    iframe {
+      height: 400px; 
+    }
+  }
+
+  @media (max-width: 480px) {
+    iframe {
+      height: 250px;
+    }
+  }
+
 
 
 
