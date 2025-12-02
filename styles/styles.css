@@ -522,12 +522,16 @@ li {
   @media (max-width: 768px) {
     iframe {
       height: 400px; 
+      width: 98%;
+      margin: 1%;
     }
   }
 
   @media (max-width: 480px) {
     iframe {
+      width: 98%;
       height: 250px;
+      margin: 1%;
     }
   }
 
