@@ -88,6 +88,11 @@ window.addEventListener("load", async () => {
                 document.getElementById("top-box").style.backgroundSize = "cover";
                 document.getElementById("top-box").style.height = "100vh";
                 document.getElementById("top-box").style.backgroundPosition = "center";
+                dataLayer.push({
+                    event: 'virtualPageview',
+                    pagePath: '/',
+                    pageTitle: 'Home'
+                });
             },
             "/about": () => {
                 renderTemplate(templateAbout, "content")
@@ -104,12 +109,27 @@ window.addEventListener("load", async () => {
                 document.getElementById("top-box").style.backgroundSize = "cover";
                 document.getElementById("top-box").style.height = "110vh";
                 document.getElementById("top-box").style.backgroundPosition = "center 90%";
+                dataLayer.push({
+                    event: 'virtualPageview',
+                    pagePath: '/about',
+                    pageTitle: 'About'
+                });
             },
             "/tickets": () => {
                 window.open("https://www.place2book.com/da/sw2/sales/event_list/EM11444", "_blank");
+                dataLayer.push({
+                    event: 'virtualPageview',
+                    pagePath: '/tickets',
+                    pageTitle: 'Tickets'
+                });
             },
             "/webshop": () => {
                 window.open("https://www.discogs.com/user/amagerrecords.dk", "_blank");
+                dataLayer.push({
+                    event: 'virtualPageview',
+                    pagePath: '/webshop',
+                    pageTitle: 'Webshop'
+                });
             },
         })
         .notFound(() => {
