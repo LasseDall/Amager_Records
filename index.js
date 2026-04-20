@@ -34,7 +34,7 @@ window.addEventListener("load", async () => {
                 <img class="img" src="./images/butik2.jpg" />
             </div>
             <div>
-                            <h2 class="mini-title">Vi opkøber vinylplader og pladesamlinger</h2>
+                <h2 class="mini-title">Vi opkøber vinylplader og pladesamlinger</h2>
                 <p class="info-text-top">
                     Amager Records handler med second hand vinyl og har et bredt udvalg inden for rock, psyche, jazz, soul/funk, indie, hiphop, metal og klassisk. <br>
                     Vi kuraterer vores udvalg hårdt, så hos os finder du både sjældenheder, gode klassikere og titler i alle genrer og prisklasser.
