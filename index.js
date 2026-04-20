@@ -60,7 +60,7 @@ window.addEventListener("load", async () => {
                 <img class="img" src="./images/øl.jpeg" />
             </div>
             <div>
-                <h1 class="mini-title">Kaffe, øl og vinbar</h1>
+                <h2 class="mini-title">Pladebutik med kaffe, øl og vinbar</h2>
                 <p class="info-text-right">
                     I Amager Records kan du også få god økologisk kaffe, øl og vin. <br><br>
                     Vi elsker, når du kommer forbi og hygger med dig selv eller en flok venner over en kop kaffe, en øl eller et glas vin - også selvom du ikke er typen, der hører plader til dagligt. Amager Records er for alle.
@@ -69,7 +69,7 @@ window.addEventListener("load", async () => {
         </section>
         <section class="section-left">
             <div>
-                <h1 class="mini-title-left">Events</h1>
+                <h2 class="mini-title-left">Events og intime koncerter hos Amager Records</h2>
                 <p class="info-text-left">
                     Amager Records har etableret sig som en yderst aktiv musikscene på Amager for både etablerede kunstnere og nye talenter inden for de mange genrer. Alsidighed og "nysgerrighed" er kodeordene for de koncerter vi sætter op, så du er garanteret en god oplevelse i Amager Records intime rammer. Køb billet <a href="https://www.place2book.com/da/sw2/sales/event_list/EM11444" target='_blank'>her</a>. <br><br>
                     Hold øje på vores <a href="https://www.facebook.com/amagerrecords/" target='_blank'>facebook</a>, <a href="https://www.instagram.com/amagerrecords/" target='_blank'>instagram</a> og <a href="https://www.discogs.com/user/amagerrecords.dk" target='_blank'>discogs</a>.
