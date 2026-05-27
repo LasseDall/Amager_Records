@@ -82,8 +82,68 @@ window.addEventListener("load", async () => {
             </div>
             
         </section>
-        <iframe src="https://www.google.com/maps/embed?pb=!4v1757682547245!6m8!1m7!1sCAoSHENJQUJJaEQ2eVRybGNzRkY2NzQzVXIxUy1CWF8.!2m2!1d55.65665584420639!2d12.6093572634597!3f354.58659108101466!4f0.5823936828342653!5f0.7820865974627469" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
-                document.getElementById("title").innerHTML = `AMAGER RECORDS <p id="extra-content">SECOND HAND VINYL</p>`;
+<iframe src="https://www.google.com/maps/embed?pb=!4v1757682547245!6m8!1m7!1sCAoSHENJQUJJaEQ2eVRybGNzRkY2NzQzVXIxUy1CWF8.!2m2!1d55.65665584420639!2d12.6093572634597!3f354.58659108101466!4f0.5823936828342653!5f0.7820865974627469" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section id="faq" style="padding: 3rem 5vw; max-width: 900px; margin: 0 auto;">
+          <h2 class="mini-title" style="margin-bottom: 1.5rem;">Ofte stillede spørgsmål</h2>
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="faq1">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody1" aria-expanded="false" aria-controls="faqBody1">Hvor ligger Amager Records, og hvornår er I åbne?</button>
+              </h3>
+              <div id="faqBody1" class="accordion-collapse collapse" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Amager Records ligger på Amagerbrogade 135, 2300 København S.<br><br><strong>Mandag:</strong> Lukket<br><strong>Tirsdag–fredag:</strong> 12–17:30<br><strong>Lørdag:</strong> 11–15<br><strong>Søndag:</strong> Lukket – i udgangspunktet, men vi holder jævnligt åbent alligevel. Hold øje med os på de sociale medier for hvornår det sker.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="faq2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody2" aria-expanded="false" aria-controls="faqBody2">Sælger Amager Records nye eller kun brugte plader?</button>
+              </h3>
+              <div id="faqBody2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Amager Records specialiserer sig i second hand vinyl. Alle plader er ultralydsrensede inden salg, så de fremstår så rene og flotte som muligt. En stor del af vores udvalg er også tilgængeligt på <a href="https://www.discogs.com/user/amagerrecords.dk" target="_blank">Discogs</a>.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="faq3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody3" aria-expanded="false" aria-controls="faqBody3">Hvilke genrer finder man hos Amager Records?</button>
+              </h3>
+              <div id="faqBody3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Hos Amager Records finder du second hand vinyl inden for rock, psych, jazz, soul, funk, indie, hiphop, metal og klassisk. Vi kuraterer udvalget hårdt, så der både er sjældenheder, klassikere og titler i alle prisklasser.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="faq4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody4" aria-expanded="false" aria-controls="faqBody4">Hvad betaler Amager Records for en pladesamling?</button>
+              </h3>
+              <div id="faqBody4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Vi opkøber plader i de fleste genrer og betaler ca. 25% af den vurderede salgspris kontant. Ønsker du i stedet at bytte til plader, giver vi ca. halvdelen af vores forventede salgspris i bytteværdi. Vi bruger god tid på at vurdere din samling, så du kan føle dig tryg i processen.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="faq5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody5" aria-expanded="false" aria-controls="faqBody5">Hvad koster det at rense sine plader hos Amager Records?</button>
+              </h3>
+              <div id="faqBody5" class="accordion-collapse collapse" aria-labelledby="faq5" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Vi tilbyder ultralydsrensning af vinyl til konkurrencedygtige priser. Kontakt os på <a href="mailto:info@amagerrecords.dk">info@amagerrecords.dk</a> eller ring på <a href="tel:+4553532300">+45 53 53 23 00</a> for aktuelle priser.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="faq6">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody6" aria-expanded="false" aria-controls="faqBody6">Hvilke typer koncerter og events holder Amager Records?</button>
+              </h3>
+              <div id="faqBody6" class="accordion-collapse collapse" aria-labelledby="faq6" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Amager Records er en aktiv musikscene på Amager med koncerter inden for mange genrer – fra etablerede kunstnere til nye talenter. Vi lægger vægt på alsidighed og nysgerrighed, og alle events foregår i butikkens intime rammer. Billetter købes via vores hjemmeside.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="faq7">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody7" aria-expanded="false" aria-controls="faqBody7">Kan man få mad og drikke hos Amager Records?</button>
+              </h3>
+              <div id="faqBody7" class="accordion-collapse collapse" aria-labelledby="faq7" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Ja – i Amager Records kan du få økologisk kaffe, øl, vand og vin. Vi er et sted for alle, uanset om du er pladenørd eller bare vil hygge med en kop kaffe eller en af vores egne lokalt bryggede fadøl.</div>
+              </div>
+            </div>
+          </div>
+        </section>`;                document.getElementById("title").innerHTML = `AMAGER RECORDS <p id="extra-content">SECOND HAND VINYL</p>`;
                 document.getElementById("opening-hours").style.display = "none";
                 document.getElementById("top-box").style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./images/index.jpg")`;
                 document.getElementById("top-box").style.backgroundSize = "cover";
