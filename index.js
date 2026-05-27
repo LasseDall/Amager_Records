@@ -16,7 +16,6 @@ window.addEventListener("load", async () => {
     adjustForMissingHash();
 
     const router = new Navigo("/", {hash: true});
-    //Not especially nice, BUT MEANT to simplify things. Make the router global so it can be accessed from all js-files
     window.router = router;
 
     router
@@ -74,15 +73,12 @@ window.addEventListener("load", async () => {
                 <p class="info-text-left">
                     Amager Records har etableret sig som en yderst aktiv musikscene på Amager for både etablerede kunstnere og nye talenter inden for de mange genrer. Alsidighed og "nysgerrighed" er kodeordene for de koncerter vi sætter op, så du er garanteret en god oplevelse i Amager Records intime rammer. Køb billet <a href="https://www.place2book.com/da/sw2/sales/event_list/EM11444" target='_blank'>her</a>. <br><br>
                     Hold øje på vores <a href="https://www.facebook.com/amagerrecords/" target='_blank'>facebook</a>, <a href="https://www.instagram.com/amagerrecords/" target='_blank'>instagram</a> og <a href="https://www.discogs.com/user/amagerrecords.dk" target='_blank'>discogs</a>.
-
                 </p>
             </div>
             <div>
                 <img class="img" src="./images/koncert.JPG" />
             </div>
-            
         </section>
-<iframe src="https://www.google.com/maps/embed?pb=!4v1757682547245!6m8!1m7!1sCAoSHENJQUJJaEQ2eVRybGNzRkY2NzQzVXIxUy1CWF8.!2m2!1d55.65665584420639!2d12.6093572634597!3f354.58659108101466!4f0.5823936828342653!5f0.7820865974627469" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <section id="faq" style="padding: 3rem 5vw; max-width: 900px; margin: 0 auto;">
           <h2 class="mini-title" style="margin-bottom: 1.5rem;">Ofte stillede spørgsmål</h2>
           <div class="accordion" id="faqAccordion">
@@ -143,7 +139,9 @@ window.addEventListener("load", async () => {
               </div>
             </div>
           </div>
-        </section>`;                document.getElementById("title").innerHTML = `AMAGER RECORDS <p id="extra-content">SECOND HAND VINYL</p>`;
+        </section>
+        <iframe style="width:100%; height:450px;" src="https://www.google.com/maps/embed?pb=!4v1757682547245!6m8!1m7!1sCAoSHENJQUJJaEQ2eVRybGNzRkY2NzQzVXIxUy1CWF8.!2m2!1d55.65665584420639!2d12.6093572634597!3f354.58659108101466!4f0.5823936828342653!5f0.7820865974627469" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
+                document.getElementById("title").innerHTML = `AMAGER RECORDS <p id="extra-content">SECOND HAND VINYL</p>`;
                 document.getElementById("opening-hours").style.display = "none";
                 document.getElementById("top-box").style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./images/index.jpg")`;
                 document.getElementById("top-box").style.backgroundSize = "cover";
