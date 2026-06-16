@@ -177,7 +177,7 @@ window.addEventListener("load", async () => {
             "/presse": () => {
                 document.getElementById("content").innerHTML = `
                 <style>
-                  .p-wrap { font-family: Georgia, serif; }
+                  .p-wrap { font-family: Georgia, serif; background: #fff; }
                   .p-hero {
                     background: #FBE6E8;
                     padding: 3rem 2rem 2.5rem;
@@ -208,25 +208,30 @@ window.addEventListener("load", async () => {
                     font-weight: 300;
                     font-style: italic;
                   }
-                  .p-list { max-width: 820px; margin: 0 auto; padding: 2.5rem 1.5rem 3rem; }
+                  .p-list {
+                    max-width: 820px;
+                    margin: 0 auto;
+                    padding: 2.5rem 1.5rem 4rem;
+                    background: #fff;
+                  }
                   .p-item {
                     display: grid;
                     grid-template-columns: 1fr auto;
                     align-items: center;
                     gap: 1rem;
-                    padding: 1.4rem 0;
+                    padding: 1.6rem 0;
                     border-bottom: 1px solid #EDD5D8;
                     text-decoration: none;
                     color: inherit;
+                    background: #fff;
                   }
-                  .p-item:first-of-type { border-top: 1px solid #EDD5D8; }
                   .p-item:hover .p-title { color: #8B4A52; }
                   .p-title {
-                    font-size: 17px;
+                    font-size: 18px;
                     color: #2A1F1F;
                     font-weight: normal;
                     line-height: 1.35;
-                    margin-bottom: 6px;
+                    margin-bottom: 8px;
                     transition: color 0.12s;
                     font-family: Georgia, serif;
                   }
@@ -236,18 +241,22 @@ window.addEventListener("load", async () => {
                     font-size: 10px;
                     letter-spacing: 0.08em;
                     text-transform: uppercase;
-                    color: #9B5A62;
+                    color: #8B4A52;
                     background: #FBE6E8;
                     border: 1px solid #e0b8bc;
                     border-radius: 3px;
-                    padding: 2px 7px;
+                    padding: 3px 8px;
                   }
                   .p-date {
                     font-family: 'Helvetica Neue', Arial, sans-serif;
                     font-size: 12px;
                     color: #B09098;
                   }
-                  .p-arrow { font-size: 18px; color: #D4A0A8; transition: color 0.12s, transform 0.12s; }
+                  .p-arrow {
+                    font-size: 18px;
+                    color: #D4A0A8;
+                    transition: color 0.12s, transform 0.12s;
+                  }
                   .p-item:hover .p-arrow { color: #8B4A52; transform: translate(2px, -2px); }
                   .p-year-divider {
                     font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -255,10 +264,11 @@ window.addEventListener("load", async () => {
                     letter-spacing: 0.16em;
                     text-transform: uppercase;
                     color: #C09098;
-                    padding: 1.5rem 0 0.5rem;
+                    padding: 2rem 0 0.75rem;
                     display: flex;
                     align-items: center;
                     gap: 10px;
+                    background: #fff;
                   }
                   .p-year-divider::before { content: ''; width: 24px; height: 1px; background: #e0b8bc; }
                   .p-year-divider::after { content: ''; flex: 1; height: 1px; background: #e0b8bc; }
