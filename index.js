@@ -177,171 +177,138 @@ window.addEventListener("load", async () => {
             "/presse": () => {
                 document.getElementById("content").innerHTML = `
                 <style>
-                  .presse-hero {
+                  .p-wrap { font-family: Georgia, serif; }
+                  .p-hero {
                     background: #FBE6E8;
-                    border-bottom: 1px solid #e8c8cb;
+                    padding: 3rem 2rem 2.5rem;
                     text-align: center;
-                    padding: 3.5rem 1.5rem 3rem;
+                    border-bottom: 1px solid #e0b8bc;
                   }
-                  .presse-hero-eyebrow {
+                  .p-hero-label {
                     font-family: 'Helvetica Neue', Arial, sans-serif;
-                    font-size: 11px;
-                    letter-spacing: 0.18em;
-                    text-transform: uppercase;
-                    color: #9B5A62;
-                    margin-bottom: 0.75rem;
-                  }
-                  .presse-hero h1 {
-                    font-size: 42px;
-                    font-weight: normal;
-                    letter-spacing: 0.02em;
-                    color: #2A1F1F;
-                    margin-bottom: 0.75rem;
-                    line-height: 1.15;
-                    font-family: Georgia, serif;
-                  }
-                  .presse-hero p {
-                    font-size: 16px;
-                    color: #6B4A4E;
-                    font-family: 'Helvetica Neue', Arial, sans-serif;
-                    font-weight: 300;
-                  }
-                  .presse-main {
-                    max-width: 860px;
-                    margin: 0 auto;
-                    padding: 3rem 1.5rem 4rem;
-                  }
-                  .presse-year-group { margin-bottom: 3rem; }
-                  .presse-year-label {
-                    font-family: 'Helvetica Neue', Arial, sans-serif;
-                    font-size: 11px;
-                    letter-spacing: 0.14em;
+                    font-size: 10px;
+                    letter-spacing: 0.2em;
                     text-transform: uppercase;
                     color: #9B5A62;
                     margin-bottom: 1rem;
-                    display: flex;
-                    align-items: center;
-                    gap: 12px;
                   }
-                  .presse-year-label::after {
-                    content: '';
-                    flex: 1;
-                    height: 1px;
-                    background: #e8c8cb;
-                  }
-                  .presse-card {
-                    display: flex;
-                    align-items: center;
-                    gap: 1rem;
-                    padding: 1rem 1.25rem;
-                    background: #fff;
-                    border: 1px solid #EDD5D8;
-                    border-radius: 6px;
-                    text-decoration: none;
-                    color: inherit;
-                    margin-bottom: 0.6rem;
-                    transition: border-color 0.15s, box-shadow 0.15s;
-                  }
-                  .presse-card:hover {
-                    border-color: #C07880;
-                    box-shadow: 0 2px 12px rgba(176,100,108,0.08);
-                  }
-                  .presse-source {
-                    flex-shrink: 0;
-                    background: #FBE6E8;
-                    border: 1px solid #e8c8cb;
-                    border-radius: 4px;
-                    padding: 5px 10px;
-                    font-family: 'Helvetica Neue', Arial, sans-serif;
-                    font-size: 11px;
-                    letter-spacing: 0.05em;
-                    color: #8B4A52;
-                    text-align: center;
-                    min-width: 110px;
-                  }
-                  .presse-body { flex: 1; min-width: 0; }
-                  .presse-title {
-                    font-size: 16px;
+                  .p-hero h1 {
+                    font-size: 48px;
                     font-weight: normal;
                     color: #2A1F1F;
-                    line-height: 1.35;
-                    margin-bottom: 4px;
+                    letter-spacing: -0.01em;
+                    line-height: 1;
+                    margin-bottom: 0.5rem;
                     font-family: Georgia, serif;
                   }
-                  .presse-date {
+                  .p-hero-sub {
+                    font-family: 'Helvetica Neue', Arial, sans-serif;
+                    font-size: 14px;
+                    color: #8B5A60;
+                    font-weight: 300;
+                    font-style: italic;
+                  }
+                  .p-list { max-width: 820px; margin: 0 auto; padding: 2.5rem 1.5rem 3rem; }
+                  .p-item {
+                    display: grid;
+                    grid-template-columns: 1fr auto;
+                    align-items: center;
+                    gap: 1rem;
+                    padding: 1.4rem 0;
+                    border-bottom: 1px solid #EDD5D8;
+                    text-decoration: none;
+                    color: inherit;
+                  }
+                  .p-item:first-of-type { border-top: 1px solid #EDD5D8; }
+                  .p-item:hover .p-title { color: #8B4A52; }
+                  .p-title {
+                    font-size: 17px;
+                    color: #2A1F1F;
+                    font-weight: normal;
+                    line-height: 1.35;
+                    margin-bottom: 6px;
+                    transition: color 0.12s;
+                    font-family: Georgia, serif;
+                  }
+                  .p-meta { display: flex; align-items: center; gap: 10px; }
+                  .p-source {
+                    font-family: 'Helvetica Neue', Arial, sans-serif;
+                    font-size: 10px;
+                    letter-spacing: 0.08em;
+                    text-transform: uppercase;
+                    color: #9B5A62;
+                    background: #FBE6E8;
+                    border: 1px solid #e0b8bc;
+                    border-radius: 3px;
+                    padding: 2px 7px;
+                  }
+                  .p-date {
                     font-family: 'Helvetica Neue', Arial, sans-serif;
                     font-size: 12px;
-                    color: #9B7A7E;
+                    color: #B09098;
                   }
-                  .presse-arrow { flex-shrink: 0; color: #C07880; font-size: 20px; line-height: 1; }
+                  .p-arrow { font-size: 18px; color: #D4A0A8; transition: color 0.12s, transform 0.12s; }
+                  .p-item:hover .p-arrow { color: #8B4A52; transform: translate(2px, -2px); }
+                  .p-year-divider {
+                    font-family: 'Helvetica Neue', Arial, sans-serif;
+                    font-size: 10px;
+                    letter-spacing: 0.16em;
+                    text-transform: uppercase;
+                    color: #C09098;
+                    padding: 1.5rem 0 0.5rem;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                  }
+                  .p-year-divider::before { content: ''; width: 24px; height: 1px; background: #e0b8bc; }
+                  .p-year-divider::after { content: ''; flex: 1; height: 1px; background: #e0b8bc; }
                 </style>
 
-                <div class="presse-hero">
-                  <p class="presse-hero-eyebrow">Amager Records i medierne</p>
-                  <h1>Presse</h1>
-                  <p>Et udvalg af artikler og omtale gennem årene</p>
-                </div>
-
-                <div class="presse-main">
-                  <div class="presse-year-group">
-                    <div class="presse-year-label">2026</div>
-                    <a class="presse-card" href="https://www.juicynet.dk/2026/02/13/til-jazz-paa-amager-paa-en-torsdag/" target="_blank" rel="noopener">
-                      <div class="presse-source">JuicyNet</div>
-                      <div class="presse-body"><div class="presse-title">Til jazz på Amager på en torsdag</div><div class="presse-date">13. feb. 2026</div></div>
-                      <div class="presse-arrow">↗</div>
-                    </a>
+                <div class="p-wrap">
+                  <div class="p-hero">
+                    <p class="p-hero-label">Amager Records i medierne</p>
+                    <h1>Presse</h1>
+                    <p class="p-hero-sub">Artikler og omtale gennem årene</p>
                   </div>
-                  <div class="presse-year-group">
-                    <div class="presse-year-label">2025</div>
-                    <a class="presse-card" href="https://www.dr.dk/nyheder/kultur/et-ud-af-24-eksemplarer-rockgruppe-har-sendt-en-helt-saerlig-vinyl-til-dansk" target="_blank" rel="noopener">
-                      <div class="presse-source">DR Kultur</div>
-                      <div class="presse-body"><div class="presse-title">Ét ud af 24 eksemplarer</div><div class="presse-date">19. maj 2025</div></div>
-                      <div class="presse-arrow">↗</div>
+                  <div class="p-list">
+                    <div class="p-year-divider">2026</div>
+                    <a class="p-item" href="https://www.juicynet.dk/2026/02/13/til-jazz-paa-amager-paa-en-torsdag/" target="_blank" rel="noopener">
+                      <div><div class="p-title">Til jazz på Amager på en torsdag</div><div class="p-meta"><span class="p-source">JuicyNet</span><span class="p-date">13. feb. 2026</span></div></div>
+                      <div class="p-arrow">↗</div>
                     </a>
-                  </div>
-                  <div class="presse-year-group">
-                    <div class="presse-year-label">2024</div>
-                    <a class="presse-card" href="https://www.juicynet.dk/2024/01/12/musik-vinyler-og-kaffe-midt-paa-amager/" target="_blank" rel="noopener">
-                      <div class="presse-source">JuicyNet</div>
-                      <div class="presse-body"><div class="presse-title">Musik, vinyler og kaffe midt på Amager</div><div class="presse-date">12. jan. 2024</div></div>
-                      <div class="presse-arrow">↗</div>
+                    <div class="p-year-divider">2025</div>
+                    <a class="p-item" href="https://www.dr.dk/nyheder/kultur/et-ud-af-24-eksemplarer-rockgruppe-har-sendt-en-helt-saerlig-vinyl-til-dansk" target="_blank" rel="noopener">
+                      <div><div class="p-title">Ét ud af 24 eksemplarer</div><div class="p-meta"><span class="p-source">DR Kultur</span><span class="p-date">19. maj 2025</span></div></div>
+                      <div class="p-arrow">↗</div>
                     </a>
-                  </div>
-                  <div class="presse-year-group">
-                    <div class="presse-year-label">2023</div>
-                    <a class="presse-card" href="https://amagerliv.dk/amager/niels-sagde-jobbet-op-og-lejede-droemmelokalet-nu-aabner-han-saerlig-cafe-i-historisk-bygning-paa-amagerbrogade" target="_blank" rel="noopener">
-                      <div class="presse-source">Amagerliv</div>
-                      <div class="presse-body"><div class="presse-title">Niels sagde jobbet op og lejede drømmelokalet</div><div class="presse-date">ca. 2023</div></div>
-                      <div class="presse-arrow">↗</div>
+                    <div class="p-year-divider">2024</div>
+                    <a class="p-item" href="https://www.juicynet.dk/2024/01/12/musik-vinyler-og-kaffe-midt-paa-amager/" target="_blank" rel="noopener">
+                      <div><div class="p-title">Musik, vinyler og kaffe midt på Amager</div><div class="p-meta"><span class="p-source">JuicyNet</span><span class="p-date">12. jan. 2024</span></div></div>
+                      <div class="p-arrow">↗</div>
                     </a>
-                  </div>
-                  <div class="presse-year-group">
-                    <div class="presse-year-label">2021</div>
-                    <a class="presse-card" href="https://amagerliv.dk/amager/makkerpar-skilles-amager-records-dropper-nye-plader-og-bliver-ren-secondhand" target="_blank" rel="noopener">
-                      <div class="presse-source">Amagerliv</div>
-                      <div class="presse-body"><div class="presse-title">Makkerpar skilles</div><div class="presse-date">3. maj 2021</div></div>
-                      <div class="presse-arrow">↗</div>
+                    <div class="p-year-divider">2023</div>
+                    <a class="p-item" href="https://amagerliv.dk/amager/niels-sagde-jobbet-op-og-lejede-droemmelokalet-nu-aabner-han-saerlig-cafe-i-historisk-bygning-paa-amagerbrogade" target="_blank" rel="noopener">
+                      <div><div class="p-title">Niels sagde jobbet op og lejede drømmelokalet</div><div class="p-meta"><span class="p-source">Amagerliv</span><span class="p-date">ca. 2023</span></div></div>
+                      <div class="p-arrow">↗</div>
                     </a>
-                  </div>
-                  <div class="presse-year-group">
-                    <div class="presse-year-label">2020</div>
-                    <a class="presse-card" href="https://ugeavisen.dk/amager/hvis-man-vil-have-pladebutik-skal-man-eddermame-ville-det-100-procent" target="_blank" rel="noopener">
-                      <div class="presse-source">Ugeavisen</div>
-                      <div class="presse-body"><div class="presse-title">Hvis man vil have pladebutik skal man eddermame ville det 100 procent</div><div class="presse-date">7. dec. 2020</div></div>
-                      <div class="presse-arrow">↗</div>
+                    <div class="p-year-divider">2021</div>
+                    <a class="p-item" href="https://amagerliv.dk/amager/makkerpar-skilles-amager-records-dropper-nye-plader-og-bliver-ren-secondhand" target="_blank" rel="noopener">
+                      <div><div class="p-title">Makkerpar skilles</div><div class="p-meta"><span class="p-source">Amagerliv</span><span class="p-date">3. maj 2021</span></div></div>
+                      <div class="p-arrow">↗</div>
                     </a>
-                  </div>
-                  <div class="presse-year-group">
-                    <div class="presse-year-label">2018</div>
-                    <a class="presse-card" href="https://ugeavisen.dk/amager/pladespillerne-paa-kirkegaardsvej-her-er-vinyl-blevet-en-landeplage" target="_blank" rel="noopener">
-                      <div class="presse-source">Ugeavisen</div>
-                      <div class="presse-body"><div class="presse-title">Pladespillerne på Kirkegårdsvej</div><div class="presse-date">11. dec. 2018</div></div>
-                      <div class="presse-arrow">↗</div>
+                    <div class="p-year-divider">2020</div>
+                    <a class="p-item" href="https://ugeavisen.dk/amager/hvis-man-vil-have-pladebutik-skal-man-eddermame-ville-det-100-procent" target="_blank" rel="noopener">
+                      <div><div class="p-title">Hvis man vil have pladebutik skal man eddermame ville det 100 procent</div><div class="p-meta"><span class="p-source">Ugeavisen</span><span class="p-date">7. dec. 2020</span></div></div>
+                      <div class="p-arrow">↗</div>
                     </a>
-                    <a class="presse-card" href="https://www.spottedbylocals.com/copenhagen/amager-records/" target="_blank" rel="noopener">
-                      <div class="presse-source">Spotted by Locals</div>
-                      <div class="presse-body"><div class="presse-title">Amager Records — Music on vinyl</div><div class="presse-date">2018</div></div>
-                      <div class="presse-arrow">↗</div>
+                    <div class="p-year-divider">2018</div>
+                    <a class="p-item" href="https://ugeavisen.dk/amager/pladespillerne-paa-kirkegaardsvej-her-er-vinyl-blevet-en-landeplage" target="_blank" rel="noopener">
+                      <div><div class="p-title">Pladespillerne på Kirkegårdsvej</div><div class="p-meta"><span class="p-source">Ugeavisen</span><span class="p-date">11. dec. 2018</span></div></div>
+                      <div class="p-arrow">↗</div>
+                    </a>
+                    <a class="p-item" href="https://www.spottedbylocals.com/copenhagen/amager-records/" target="_blank" rel="noopener">
+                      <div><div class="p-title">Amager Records — Music on vinyl</div><div class="p-meta"><span class="p-source">Spotted by Locals</span><span class="p-date">2018</span></div></div>
+                      <div class="p-arrow">↗</div>
                     </a>
                   </div>
                 </div>`;
