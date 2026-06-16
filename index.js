@@ -19,15 +19,13 @@ window.addEventListener("load", async () => {
     window.router = router;
 
     function resetTopBox() {
-        const box = document.getElementById("top-box");
-        box.style.backgroundImage = "none";
-        box.style.backgroundColor = "";
-        box.style.height = "0";
-        box.style.minHeight = "0";
-        box.style.padding = "0";
-        box.style.overflow = "hidden";
+        document.getElementById("top-box").style.display = "none";
         document.getElementById("title").innerHTML = "";
         document.getElementById("opening-hours").style.display = "none";
+    }
+
+    function showTopBox() {
+        document.getElementById("top-box").style.display = "";
     }
 
     router
@@ -39,6 +37,7 @@ window.addEventListener("load", async () => {
         })
         .on({
             "/": () => {
+                showTopBox();
                 document.getElementById("content").innerHTML = `     
             <section class="section-right">
             <div>
@@ -166,6 +165,7 @@ window.addEventListener("load", async () => {
                 });
             },
             "/about": () => {
+                showTopBox();
                 renderTemplate(templateAbout, "content")
                 document.getElementById("title").innerHTML = "ÅBNINGSTIDER"
                 document.getElementById("opening-hours").style.display = "block"
