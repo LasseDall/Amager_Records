@@ -174,6 +174,189 @@ window.addEventListener("load", async () => {
                     pageTitle: 'About'
                 });
             },
+            "/presse": () => {
+                document.getElementById("content").innerHTML = `
+                <style>
+                  .presse-hero {
+                    background: #FBE6E8;
+                    border-bottom: 1px solid #e8c8cb;
+                    text-align: center;
+                    padding: 3.5rem 1.5rem 3rem;
+                  }
+                  .presse-hero-eyebrow {
+                    font-family: 'Helvetica Neue', Arial, sans-serif;
+                    font-size: 11px;
+                    letter-spacing: 0.18em;
+                    text-transform: uppercase;
+                    color: #9B5A62;
+                    margin-bottom: 0.75rem;
+                  }
+                  .presse-hero h1 {
+                    font-size: 42px;
+                    font-weight: normal;
+                    letter-spacing: 0.02em;
+                    color: #2A1F1F;
+                    margin-bottom: 0.75rem;
+                    line-height: 1.15;
+                    font-family: Georgia, serif;
+                  }
+                  .presse-hero p {
+                    font-size: 16px;
+                    color: #6B4A4E;
+                    font-family: 'Helvetica Neue', Arial, sans-serif;
+                    font-weight: 300;
+                  }
+                  .presse-main {
+                    max-width: 860px;
+                    margin: 0 auto;
+                    padding: 3rem 1.5rem 4rem;
+                  }
+                  .presse-year-group { margin-bottom: 3rem; }
+                  .presse-year-label {
+                    font-family: 'Helvetica Neue', Arial, sans-serif;
+                    font-size: 11px;
+                    letter-spacing: 0.14em;
+                    text-transform: uppercase;
+                    color: #9B5A62;
+                    margin-bottom: 1rem;
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                  }
+                  .presse-year-label::after {
+                    content: '';
+                    flex: 1;
+                    height: 1px;
+                    background: #e8c8cb;
+                  }
+                  .presse-card {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    padding: 1rem 1.25rem;
+                    background: #fff;
+                    border: 1px solid #EDD5D8;
+                    border-radius: 6px;
+                    text-decoration: none;
+                    color: inherit;
+                    margin-bottom: 0.6rem;
+                    transition: border-color 0.15s, box-shadow 0.15s;
+                  }
+                  .presse-card:hover {
+                    border-color: #C07880;
+                    box-shadow: 0 2px 12px rgba(176,100,108,0.08);
+                  }
+                  .presse-source {
+                    flex-shrink: 0;
+                    background: #FBE6E8;
+                    border: 1px solid #e8c8cb;
+                    border-radius: 4px;
+                    padding: 5px 10px;
+                    font-family: 'Helvetica Neue', Arial, sans-serif;
+                    font-size: 11px;
+                    letter-spacing: 0.05em;
+                    color: #8B4A52;
+                    text-align: center;
+                    min-width: 110px;
+                  }
+                  .presse-body { flex: 1; min-width: 0; }
+                  .presse-title {
+                    font-size: 16px;
+                    font-weight: normal;
+                    color: #2A1F1F;
+                    line-height: 1.35;
+                    margin-bottom: 4px;
+                    font-family: Georgia, serif;
+                  }
+                  .presse-date {
+                    font-family: 'Helvetica Neue', Arial, sans-serif;
+                    font-size: 12px;
+                    color: #9B7A7E;
+                  }
+                  .presse-arrow { flex-shrink: 0; color: #C07880; font-size: 20px; line-height: 1; }
+                </style>
+
+                <div class="presse-hero">
+                  <p class="presse-hero-eyebrow">Amager Records i medierne</p>
+                  <h1>Presse</h1>
+                  <p>Et udvalg af artikler og omtale gennem årene</p>
+                </div>
+
+                <div class="presse-main">
+                  <div class="presse-year-group">
+                    <div class="presse-year-label">2026</div>
+                    <a class="presse-card" href="https://www.juicynet.dk/2026/02/13/til-jazz-paa-amager-paa-en-torsdag/" target="_blank" rel="noopener">
+                      <div class="presse-source">JuicyNet</div>
+                      <div class="presse-body"><div class="presse-title">Til jazz på Amager på en torsdag</div><div class="presse-date">13. feb. 2026</div></div>
+                      <div class="presse-arrow">↗</div>
+                    </a>
+                  </div>
+                  <div class="presse-year-group">
+                    <div class="presse-year-label">2025</div>
+                    <a class="presse-card" href="https://www.dr.dk/nyheder/kultur/et-ud-af-24-eksemplarer-rockgruppe-har-sendt-en-helt-saerlig-vinyl-til-dansk" target="_blank" rel="noopener">
+                      <div class="presse-source">DR Kultur</div>
+                      <div class="presse-body"><div class="presse-title">Ét ud af 24 eksemplarer</div><div class="presse-date">19. maj 2025</div></div>
+                      <div class="presse-arrow">↗</div>
+                    </a>
+                  </div>
+                  <div class="presse-year-group">
+                    <div class="presse-year-label">2024</div>
+                    <a class="presse-card" href="https://www.juicynet.dk/2024/01/12/musik-vinyler-og-kaffe-midt-paa-amager/" target="_blank" rel="noopener">
+                      <div class="presse-source">JuicyNet</div>
+                      <div class="presse-body"><div class="presse-title">Musik, vinyler og kaffe midt på Amager</div><div class="presse-date">12. jan. 2024</div></div>
+                      <div class="presse-arrow">↗</div>
+                    </a>
+                  </div>
+                  <div class="presse-year-group">
+                    <div class="presse-year-label">2023</div>
+                    <a class="presse-card" href="https://amagerliv.dk/amager/niels-sagde-jobbet-op-og-lejede-droemmelokalet-nu-aabner-han-saerlig-cafe-i-historisk-bygning-paa-amagerbrogade" target="_blank" rel="noopener">
+                      <div class="presse-source">Amagerliv</div>
+                      <div class="presse-body"><div class="presse-title">Niels sagde jobbet op og lejede drømmelokalet</div><div class="presse-date">ca. 2023</div></div>
+                      <div class="presse-arrow">↗</div>
+                    </a>
+                  </div>
+                  <div class="presse-year-group">
+                    <div class="presse-year-label">2021</div>
+                    <a class="presse-card" href="https://amagerliv.dk/amager/makkerpar-skilles-amager-records-dropper-nye-plader-og-bliver-ren-secondhand" target="_blank" rel="noopener">
+                      <div class="presse-source">Amagerliv</div>
+                      <div class="presse-body"><div class="presse-title">Makkerpar skilles</div><div class="presse-date">3. maj 2021</div></div>
+                      <div class="presse-arrow">↗</div>
+                    </a>
+                  </div>
+                  <div class="presse-year-group">
+                    <div class="presse-year-label">2020</div>
+                    <a class="presse-card" href="https://ugeavisen.dk/amager/hvis-man-vil-have-pladebutik-skal-man-eddermame-ville-det-100-procent" target="_blank" rel="noopener">
+                      <div class="presse-source">Ugeavisen</div>
+                      <div class="presse-body"><div class="presse-title">Hvis man vil have pladebutik skal man eddermame ville det 100 procent</div><div class="presse-date">7. dec. 2020</div></div>
+                      <div class="presse-arrow">↗</div>
+                    </a>
+                  </div>
+                  <div class="presse-year-group">
+                    <div class="presse-year-label">2018</div>
+                    <a class="presse-card" href="https://ugeavisen.dk/amager/pladespillerne-paa-kirkegaardsvej-her-er-vinyl-blevet-en-landeplage" target="_blank" rel="noopener">
+                      <div class="presse-source">Ugeavisen</div>
+                      <div class="presse-body"><div class="presse-title">Pladespillerne på Kirkegårdsvej</div><div class="presse-date">11. dec. 2018</div></div>
+                      <div class="presse-arrow">↗</div>
+                    </a>
+                    <a class="presse-card" href="https://www.spottedbylocals.com/copenhagen/amager-records/" target="_blank" rel="noopener">
+                      <div class="presse-source">Spotted by Locals</div>
+                      <div class="presse-body"><div class="presse-title">Amager Records — Music on vinyl</div><div class="presse-date">2018</div></div>
+                      <div class="presse-arrow">↗</div>
+                    </a>
+                  </div>
+                </div>`;
+                document.getElementById("title").innerHTML = "";
+                document.getElementById("opening-hours").style.display = "none";
+                document.getElementById("top-box").style.backgroundImage = "none";
+                document.getElementById("top-box").style.backgroundColor = "#FBE6E8";
+                document.getElementById("top-box").style.height = "0";
+                document.getElementById("top-box").style.padding = "0";
+                dataLayer.push({
+                    event: 'virtualPageview',
+                    pagePath: '/presse',
+                    pageTitle: 'Presse'
+                });
+            },
             "/tickets": () => {
                 window.open("https://www.place2book.com/da/sw2/sales/event_list/EM11444", "_blank");
                 dataLayer.push({
