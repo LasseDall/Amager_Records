@@ -18,6 +18,18 @@ window.addEventListener("load", async () => {
     const router = new Navigo("/", {hash: true});
     window.router = router;
 
+    function resetTopBox() {
+        const box = document.getElementById("top-box");
+        box.style.backgroundImage = "none";
+        box.style.backgroundColor = "";
+        box.style.height = "0";
+        box.style.minHeight = "0";
+        box.style.padding = "0";
+        box.style.overflow = "hidden";
+        document.getElementById("title").innerHTML = "";
+        document.getElementById("opening-hours").style.display = "none";
+    }
+
     router
         .hooks({
             before(done, match) {
@@ -324,12 +336,7 @@ window.addEventListener("load", async () => {
                     </a>
                   </div>
                 </div>`;
-                document.getElementById("title").innerHTML = "";
-                document.getElementById("opening-hours").style.display = "none";
-                document.getElementById("top-box").style.backgroundImage = "none";
-                document.getElementById("top-box").style.backgroundColor = "#FBE6E8";
-                document.getElementById("top-box").style.height = "0";
-                document.getElementById("top-box").style.padding = "0";
+                resetTopBox();
                 dataLayer.push({
                     event: 'virtualPageview',
                     pagePath: '/presse',
