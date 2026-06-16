@@ -177,7 +177,7 @@ window.addEventListener("load", async () => {
             "/presse": () => {
                 document.getElementById("content").innerHTML = `
                 <style>
-                  .p-wrap { font-family: Georgia, serif; background: #fff; }
+                  .p-wrap { font-family: Georgia, serif; background: #FBE6E8; }
                   .p-hero {
                     background: #FBE6E8;
                     padding: 3rem 2rem 2.5rem;
@@ -211,27 +211,43 @@ window.addEventListener("load", async () => {
                   .p-list {
                     max-width: 820px;
                     margin: 0 auto;
-                    padding: 2.5rem 1.5rem 4rem;
-                    background: #fff;
+                    padding: 2rem 1.5rem 4rem;
                   }
+                  .p-year-divider {
+                    font-family: 'Helvetica Neue', Arial, sans-serif;
+                    font-size: 10px;
+                    letter-spacing: 0.16em;
+                    text-transform: uppercase;
+                    color: #9B5A62;
+                    padding: 1.75rem 0 0.6rem;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                  }
+                  .p-year-divider::before { content: ''; width: 20px; height: 1px; background: #c9868e; }
+                  .p-year-divider::after { content: ''; flex: 1; height: 1px; background: #c9868e; }
                   .p-item {
                     display: grid;
                     grid-template-columns: 1fr auto;
                     align-items: center;
                     gap: 1rem;
-                    padding: 1.6rem 0;
-                    border-bottom: 1px solid #EDD5D8;
+                    padding: 1rem 1.25rem;
+                    background: #fff;
+                    border-radius: 6px;
+                    border: 1px solid #EDD5D8;
                     text-decoration: none;
                     color: inherit;
-                    background: #fff;
+                    margin-bottom: 0.5rem;
+                    transition: border-color 0.15s;
                   }
+                  .p-item:hover { border-color: #C07880; }
                   .p-item:hover .p-title { color: #8B4A52; }
                   .p-title {
-                    font-size: 18px;
+                    font-size: 16px;
                     color: #2A1F1F;
                     font-weight: normal;
                     line-height: 1.35;
-                    margin-bottom: 8px;
+                    margin-bottom: 6px;
                     transition: color 0.12s;
                     font-family: Georgia, serif;
                   }
@@ -245,7 +261,7 @@ window.addEventListener("load", async () => {
                     background: #FBE6E8;
                     border: 1px solid #e0b8bc;
                     border-radius: 3px;
-                    padding: 3px 8px;
+                    padding: 2px 7px;
                   }
                   .p-date {
                     font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -253,25 +269,11 @@ window.addEventListener("load", async () => {
                     color: #B09098;
                   }
                   .p-arrow {
-                    font-size: 18px;
+                    font-size: 16px;
                     color: #D4A0A8;
                     transition: color 0.12s, transform 0.12s;
                   }
                   .p-item:hover .p-arrow { color: #8B4A52; transform: translate(2px, -2px); }
-                  .p-year-divider {
-                    font-family: 'Helvetica Neue', Arial, sans-serif;
-                    font-size: 10px;
-                    letter-spacing: 0.16em;
-                    text-transform: uppercase;
-                    color: #C09098;
-                    padding: 2rem 0 0.75rem;
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                    background: #fff;
-                  }
-                  .p-year-divider::before { content: ''; width: 24px; height: 1px; background: #e0b8bc; }
-                  .p-year-divider::after { content: ''; flex: 1; height: 1px; background: #e0b8bc; }
                 </style>
 
                 <div class="p-wrap">
